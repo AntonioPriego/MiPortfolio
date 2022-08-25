@@ -13,7 +13,7 @@ body {
 }
 
 #page-wraper {
-    background: url(../images/page-bg.jpg) no-repeat center center fixed;
+    background: url(../images/fondo.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -458,12 +458,20 @@ button:hover {
     background-image: url(../images/hw-red-icon.png);
 }
 
-.service-item .fourth-service-icon {
+.service-item .game-icon {
     background-image: url(../images/game-icon.png);
 }
 
-.service-item:hover .fourth-service-icon {
+.service-item:hover .game-icon {
     background-image: url(../images/game-red-icon.png);
+}
+
+.service-item .uxui-icon {
+    background-image: url(../images/uxui-icon.png);
+}
+
+.service-item:hover .uxui-icon {
+    background-image: url(../images/uxui-red-icon.png);
 }
 
 
