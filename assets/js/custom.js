@@ -55,14 +55,8 @@
     var filter = function() {
       var type = $filterCheckboxes.filter(":checked").data("type");
 
-      if (type == "uxui") {
-        type = "[data-type=deepLearning";
-      }
-      else if (type == "microcontroladores") {
-        type = "[data-type=deepLearning";
-      }
-      else if (type !== "*") {
-        type = "[data-type=" + type;
+      if (type !== "*") {
+        type = "." + type;
       }
 
       $isotope.isotope({ filter: type });
