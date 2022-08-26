@@ -53,12 +53,12 @@
     var $filterCheckboxes = $('input[type="radio"]', this);
 
     var filter = function() {
-      var type = $filterCheckboxes.filter(":checked").data("type") || "*";
+      var type = $filterCheckboxes.filter(":checked").data("type");
       
       if (type !== "*") {
         type = "[data-type=" + type;
       }
-      console.log($isotope);
+      console.log(type);
       $isotope.isotope({ filter: type });
     };
 
