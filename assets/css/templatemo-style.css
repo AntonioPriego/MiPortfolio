@@ -313,6 +313,13 @@ html {
     margin: 10px auto;
 }
 
+.line-dec {
+    width: 850px;
+    height: 3px;
+    background-color: #00000036;
+    margin: 10px auto;
+}
+
 .section-heading span {
     margin-top: 5px;
     font-size: 16px;
@@ -648,7 +655,7 @@ figure.snip1321.hover:after {
 
 /* Contact Me */
 
-section.contact-me {
+section.logros {
     border-bottom: none;
 }
 
