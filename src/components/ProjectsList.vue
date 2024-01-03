@@ -13,11 +13,11 @@
             class="tags"
             :class="{ 'extensive': project.isWide, 'tall': project.isHigh }"
             :style="{ '--accent-color-alpha': project.accentColorAlpha, '--accent-color-idle': project.accentColor }">
-              <span v-if="project.isUnreal"   class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(img/unreal-tag.png)'        }"></span>
-              <span v-if="project.isUnrealBp" class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(img/unreal-and-bp-tag.gif)' }"></span>
-              <span v-if="project.isCpp"      class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(img/cpp-tag.png)'           }"></span>
-              <span v-if="project.isBlender"  class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(img/blender-tag.png)'       }"></span>
-              <span v-if="project.isGodot"    class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(img/godot-tag.png)'         }"></span>
+              <span v-if="project.isUnreal"   class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/unreal-tag.png)'        }"></span>
+              <span v-if="project.isUnrealBp" class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/unreal-and-bp-tag.gif)' }"></span>
+              <span v-if="project.isCpp"      class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/cpp-tag.png)'           }"></span>
+              <span v-if="project.isBlender"  class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/blender-tag.png)'       }"></span>
+              <span v-if="project.isGodot"    class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/godot-tag.png)'         }"></span>
             </div>
             
             <div class="title-bar2" :style="{ '--background-color': `${project.accentColor}`, '--box-shadow': `-25px 0 0 0 ${project.accentColorHover}` }"></div>
@@ -26,10 +26,10 @@
                 {{ project.name }}
               </span>
               <span class="techs">
-                <span v-if="project.isUnreal || project.isUnrealBp"  class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(img/ue-icon-dark.png)'      }"></span>
-                <span v-if="project.isCpp"     class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': '"url(img/cpp-icon-dark.png)"'     }"></span>
-                <span v-if="project.isBlender" class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(img/blender-icon-dark.png)' }"></span>
-                <span v-if="project.isGodot"   class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(img/godot-icon-dark.png)'   }"></span>
+                <span v-if="project.isUnreal || project.isUnrealBp"  class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(https://antoniopriego.github.io/portfolio/img/ue-icon-dark.png)' }"></span>
+                <span v-if="project.isCpp"     class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(https://antoniopriego.github.io/portfolio/img/cpp-icon-dark.png)'     }"></span>
+                <span v-if="project.isBlender" class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(https://antoniopriego.github.io/portfolio/img/blender-icon-dark.png)' }"></span>
+                <span v-if="project.isGodot"   class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(https://antoniopriego.github.io/portfolio/img/godot-icon-dark.png)'   }"></span>
               </span>
             </div>
           </div>
