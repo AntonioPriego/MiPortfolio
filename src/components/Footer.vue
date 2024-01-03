@@ -1,0 +1,59 @@
+<template>
+  <div class="footer">    
+    <div class="right">Reach me at <a href="mailto:antoniopriego98@outlook.com">antoniopriego98@outlook.com</a> or <router-link to="/contact">through here</router-link></div>
+    <div class="left">Template by <a href="https://github.com/schouffy/gamedev-portfolio" target="blank">schouffy</a> and suited by <a href="https://github.com/AntonioPriego/portfolio" target="blank">me</a></div>
+  </div>
+</template>
+
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
+  name: "Footer"
+});
+</script>
+
+<style scoped lang="less">
+
+@import '../css/variables.less';
+
+.footer {
+  background-color: @contentBgColor;  
+  width: 100%;
+  opacity: 0.7;
+  padding-bottom: 30px;
+}
+.left, .right {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 0.68em;
+}
+
+.left {  
+  font-size: 0.6em;
+}
+
+
+@media only screen and (min-width: 620px){
+
+  .footer {
+    background-color: @textColor;  
+    font-size: 0.8em;
+    padding: 0;
+    width: 100%;
+  }
+
+  .left, .right {
+    padding: 20px;
+    font-size: 0.85em;
+  }
+
+  .left {
+    float: left;
+  }
+
+  .right {
+    float:right;
+  }
+}
+</style>
