@@ -27,7 +27,7 @@
               </span>
               <span class="techs">
                 <span v-if="project.isUnreal || project.isUnrealBp"  class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(img/ue-icon-dark.png)'      }"></span>
-                <span v-if="project.isCpp"     class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(img/cpp-icon-dark.png)'     }"></span>
+                <span v-if="project.isCpp"     class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': '"url(img/cpp-icon-dark.png)"'     }"></span>
                 <span v-if="project.isBlender" class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(img/blender-icon-dark.png)' }"></span>
                 <span v-if="project.isGodot"   class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(img/godot-icon-dark.png)'   }"></span>
               </span>
