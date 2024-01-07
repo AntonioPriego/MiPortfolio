@@ -1,56 +1,20 @@
 import ProjectData from '@/data/ProjectData.ts'
 
 export default [
-    new ProjectData("project-6", "Sultans Of Sing", "img/projects/project-6-icon.png", `
-    <div class="paragraph">
-      <strong>Sultans Of Sing</strong> is a thing of beauty that I am so proud of. It's available on Windows Store because why not.
-      <br/>Image by <a href="https://www.pexels.com/fr-fr/@aldoalz" target="blank">Aldo Picaso</a>.
-            </div>
-            <div class="paragraph center">
-              <a href="https://www.microsoft.com/en-us/p/some-app" target="_blank"><img src="img/projects/ms-store-logo.png" alt="MS Store button" /></a>
-          </div>
-
-          <div class="paragraph">
-            Main features :
-            <ul>
-            <li>Some stuff</li>
-            <li>Some great stuff</li>
-            <li>More awesome stuff</li>
-            <li>And then some</li>
-            </ul>
-        </div>
-
-        <div class="paragraph center">
-          <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Sultans Of Sing Screenshot" />
-          <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Sultans Of Sing Screenshot" />
-          <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Sultans Of Sing Screenshot" /> 
-        </div>
-    `, false, true),
-    new ProjectData("project-7", "Drew Blood", "img/projects/project-7-icon.png", `
-    <div class="paragraph">
-                <strong>Drew Blood</strong> is a thing of beauty that I am so proud of. I could write about it for hours.
-                <br/>Image by <a target="_blank" href="https://www.pexels.com/fr-fr/@karolina-grabowska">Karolina Grabowska</a>.
-            </div>
-
-            <div class="paragraph">
-              Main features :
-              <ul>
-              <li>Some stuff</li>
-              <li>Some great stuff</li>
-              <li>More awesome stuff</li>
-              <li>And then some</li>
-              </ul>
-          </div>
-
-            <div class="paragraph">
-              <div class="notice">
-                You can download and try the app for free or purchase it directly from <a href="http://www.somewbsite.com/" target="_blank">Some website</a>
-              </div>
-            </div>
-
-            <div class="paragraph center">
-                <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Drew Blood Screenshot" />
-                <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Drew Blood Screenshot" />
-                <img class="pc-screenshot" src="https://fakeimg.pl/534x300/" alt="Drew Blood Screenshot" /> 
-            </div>`),
+  new ProjectData("TFG", "SmartPen", "https://raw.githubusercontent.com/AntonioPriego/SmartPen/main/Memory/capturas/SmartPenMP.png", ` `,
+    /*smallIcons*/true, /*zoomHeight=*/"85%", /*zoomWidth=*/"55%", /*xShift=*/"80px", /*yShift=*/"0px", /*high=*/true, /*wide=*/false, "rgb(255, 138, 77)",
+    /*isUnreal=*/false, /*isUnrealBp=*/false, /*isOpenGL*/false, /*isCpp=*/true, /*isBlender=*/true, /*isGodot=*/false,
+    /*isArduino=*/true, /*isQT=*/true, /*isBluetooth=*/true, /*isTensorFlow=*/true, /*isJava=*/false, /*isRuby=*/false, /*isCuda=*/false, /*isMPI=*/false, /*isFlutter=*/false),
+  new ProjectData("Civitas", "Text Monopoly", "img/projects/civitas.png", ` `,
+    /*smallIcons*/false, /*zoomHeight=*/"100%", /*zoomWidth=*/"100%", /*xShift=*/"0px", /*yShift=*/"0px", /*high=*/false, /*wide=*/false, "rgb(155, 17, 30)",
+    /*isUnreal=*/false, /*isUnrealBp=*/false, /*isOpenGL*/false, /*isCpp=*/false, /*isBlender=*/false, /*isGodot=*/false,
+    /*isArduino=*/false, /*isQT=*/false, /*isBluetooth=*/false, /*isTensorFlow=*/false, /*isPython=*/false, /*isJava=*/true, /*isRuby=*/true, /*isCuda=*/false, /*isMPI=*/false, /*isFlutter=*/false), 
+  new ProjectData("Sobel", "Sobel filter", "img/projects/sobel.jpg", ` `,
+    /*smallIcons*/false, /*zoomHeight=*/"100%", /*zoomWidth=*/"90%", /*xShift=*/"15px", /*yShift=*/"0px", /*high=*/false, /*wide=*/false, "rgb(118, 185, 0)",
+    /*isUnreal=*/false, /*isUnrealBp=*/false, /*isOpenGL*/false, /*isCpp=*/false, /*isBlender=*/false, /*isGodot=*/false,
+    /*isArduino=*/false, /*isQT=*/false, /*isBluetooth=*/false, /*isTensorFlow=*/false, /*isPython=*/false, /*isJava=*/false, /*isRuby=*/false, /*isCuda=*/true, /*isMPI=*/true, /*isFlutter=*/false),
+  new ProjectData("TiradApp", "Flutter app", "img/projects/TiradApp/Preview.png", ` `,
+    /*smallIcons*/false, /*zoomHeight=*/"102%", /*zoomWidth=*/"100%", /*xShift=*/"0px", /*yShift=*/"0px", /*high=*/false, /*wide=*/true, "rgb(100, 203, 248)",
+    /*isUnreal=*/false, /*isUnrealBp=*/false, /*isOpenGL*/false, /*isCpp=*/false, /*isBlender=*/false, /*isGodot=*/false,
+    /*isArduino=*/false, /*isQT=*/false, /*isBluetooth=*/false, /*isTensorFlow=*/false, /*isPython=*/false, /*isJava=*/false, /*isRuby=*/false, /*isCuda=*/false, /*isMPI=*/false, /*isFlutter=*/true),
 ];

@@ -40,16 +40,29 @@ Helpers.preloadImages([
 @import './css/projects.less';
 @import './css/variables.less';
 
-html {
+html {	
   margin: 0px;
-  background-color: @bodyBgColor;
+  background: linear-gradient(-2deg, #b314b1 25%, rgb(34, 40, 49) 85%);
+	background-size: 400% 400%;
+	animation: gradient 4.5s ease infinite;
 }
 
 body {
   margin: 0px;
-  background-color: @bodyBgColor;
-  background: linear-gradient(0deg,rgb(57, 62, 70),rgb(34, 40, 49) 85%); 
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 13%;
+	}
+	50% {
+		background-position: 90% 17%;
+	}
+	100% {
+		background-position: 0% 13%;
+	}
+}
+
 
 #app {
   //background-color: @contentBgColor; 
@@ -101,7 +114,19 @@ h1 {
 
 .main {
     padding: 12px;
-  }
+}
+
+.blurredAvatar {
+  opacity: 0.8;
+  filter: alpha(opacity=40);
+  filter: blur(8.5px);
+}
+    
+.blurredAvatar:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  filter: blur(0px);
+}
 
 @media only screen and (min-width: 620px){
 
@@ -117,7 +142,7 @@ h1 {
   }
 
   .main {
-    padding: 0px 40px 40px 180px;
+    padding: 0px 40px 40px 40px;
   }
 
   .main, .header, .footer {

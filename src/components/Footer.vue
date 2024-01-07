@@ -18,15 +18,15 @@ export default Vue.extend({
 @import '../css/variables.less';
 
 .footer {
-  background-color: @contentBgColor;  
+  //background-color: @contentBgColor;  
   width: 100%;
   opacity: 0.7;
   padding-bottom: 30px;
 }
 .left, .right {
-    padding-top: 10px;
-    text-align: center;
-    font-size: 0.68em;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 0.68em;
 }
 
 .left {  
@@ -37,7 +37,7 @@ export default Vue.extend({
 @media only screen and (min-width: 620px){
 
   .footer {
-    background-color: @textColor;  
+    //background-color: @textColor;  
     font-size: 0.8em;
     padding: 0;
     width: 100%;

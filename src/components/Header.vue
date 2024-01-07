@@ -31,20 +31,19 @@ export default Vue.extend({
   top: 0;
   left: 0;
   width: 97%;
-  background: linear-gradient(-160deg,rgba(188, 20, 255, 0.647),rgba(34, 40, 49, 0.625) 60%), 
-              linear-gradient(-172deg,rgba(251, 0, 79, 0.88),  rgba(34, 40, 49, 0.625) 35%); 
-
-  box-shadow: inset 0px 0px 10.5px 0.25px #222831;  
-  transform: skew(-15deg);
+  background: linear-gradient(-160deg,#bc14ff5e,rgba(34, 40, 49, 0.25) 60%),
+              linear-gradient(-152deg,#ff00bb8f,rgba(34, 40, 49, 0.1) 13%),
+              linear-gradient(-172deg,#ff317984,  rgba(34, 40, 49, 0.1) 52%); 
+  transform: skew(-20deg);
   position: sticky;
-  border-radius: 0 0 12px 12px;
+  border-radius: 0 0 10px 12px;
 }
 
 .nav-bar {
   text-align: right;
-  padding: 10px;
-  line-height: 3em;
-  transform: skew(7deg);
+  padding: 3px 10px 10px 10px;
+  line-height: 2.6em;
+  transform: skew(7.5deg);
 }
 
 a {
@@ -74,7 +73,7 @@ a {
 
 @media only screen and (max-width: 620px){
   .nav-bar {
-    line-height: 5em;
+    line-height: 4.6em;
     font-size: 60%;
   }
 
@@ -82,12 +81,6 @@ a {
     margin-left: 9px;
     margin-right: 9px;
     padding-bottom: 0px;
-  }
-}
-
-@media only screen and (max-width: 620px) {
-
-  .nav-bar {
   }
 }
 

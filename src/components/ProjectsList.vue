@@ -7,17 +7,27 @@
               @click="showDetails(project)"
               class="project-item"
               :class="{ 'wide': project.isWide, 'high': project.isHigh }">
-            <div class="project-item-image" :style="{ 'background-image': 'url(' + project.iconUrl + ')' }"></div>
+            <div class="project-item-image" :style="{ '--zoomHeight': project.zoomHeight, '--zoomWidth': project.zoomWidth, '--xShift': project.xShift, '--yShift': project.yShift, 'background-image': 'url(' + project.iconUrl + ')', '--accent-color-idle': project.accentColorHover }"></div>
             
-            <div v-if="project.isUnreal || project.isUnrealBp || project.isCpp || project.isBlender || project.isGodot"
+
+            <div v-if="project.isUnreal || project.isUnrealBp || project.isCpp || project.isBlender || project.isGodot || project.isOpenGL || project.isArduino || project.isQT || project.isBluetooth || project.isTensorFlow || project.isPython || project.isJava || project.isRuby || project.isCuda || project.isMPI || project.isFlutter"
             class="tags"
             :class="{ 'extensive': project.isWide, 'tall': project.isHigh }"
             :style="{ '--accent-color-alpha': project.accentColorAlpha, '--accent-color-idle': project.accentColor }">
-              <span v-if="project.isUnreal"   class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/unreal-tag.png)'        }"></span>
-              <span v-if="project.isUnrealBp" class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/unreal-and-bp-tag.gif)' }"></span>
-              <span v-if="project.isCpp"      class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/cpp-tag.png)'           }"></span>
-              <span v-if="project.isBlender"  class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/blender-tag.png)'       }"></span>
-              <span v-if="project.isGodot"    class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/godot-tag.png)'         }"></span>
+              <span v-if="project.isUnreal"     class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(img/unreal-tag.png)'        }"></span>
+              <span v-if="project.isUnrealBp"   class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(img/unreal-and-bp-tag.gif)' }"></span>
+              <span v-if="project.isOpenGL"     class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(img/opengl-tag.png)'        }"></span>
+              <span v-if="project.isCpp"        class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(img/cpp-tag.png)'           }"></span>
+              <span v-if="project.isBlender"    class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(img/blender-tag.png)'       }"></span>
+              <span v-if="project.isGodot"      class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(img/godot-tag.png)'         }"></span>
+              <span v-if="project.isArduino"    class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(img/arduino-tag.png)'       }"></span>
+              <span v-if="project.isQT"         class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(img/qt-tag.png)'            }"></span>
+              <span v-if="project.isBluetooth"  class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(img/bluetooth-tag.png)'     }"></span>
+              <span v-if="project.isTensorFlow" class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(img/tensorflow-tag.png)'    }"></span>
+              <span v-if="project.isPython"     class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(img/python-tag.png)'        }"></span>
+              <span v-if="project.isJava"       class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(img/java-tag.png)'          }"></span>
+              <span v-if="project.isRuby"       class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(img/ruby-tag.png)'          }"></span>
+              <span v-if="project.isFlutter"    class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(img/flutter-tag.png)'          }"></span>
             </div>
             
             <div class="title-bar2" :style="{ '--background-color': `${project.accentColor}`, '--box-shadow': `-25px 0 0 0 ${project.accentColorHover}` }"></div>
@@ -25,11 +35,22 @@
               <span class="title-text">
                 {{ project.name }}
               </span>
-              <span class="techs">
-                <span v-if="project.isUnreal || project.isUnrealBp"  class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(https://antoniopriego.github.io/portfolio/img/ue-icon-dark.png)' }"></span>
-                <span v-if="project.isCpp"     class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(https://antoniopriego.github.io/portfolio/img/cpp-icon-dark.png)'     }"></span>
-                <span v-if="project.isBlender" class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(https://antoniopriego.github.io/portfolio/img/blender-icon-dark.png)' }"></span>
-                <span v-if="project.isGodot"   class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(https://antoniopriego.github.io/portfolio/img/godot-icon-dark.png)'   }"></span>
+              <span class="techs" :class="{ 'smallIcons': project.smallIcons }" >
+                <span v-if="project.isUnreal || project.isUnrealBp"  class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(img/ue-icon-dark.png)' }"></span>
+                <span v-if="project.isOpenGL"     class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(img/opengl-icon-dark.png)'                }"></span>
+                <span v-if="project.isCpp"        class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(img/cpp-icon-dark.png)'                   }"></span>
+                <span v-if="project.isBlender"    class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(img/blender-icon-dark.png)'               }"></span>
+                <span v-if="project.isGodot"      class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(img/godot-icon-dark.png)'                 }"></span>
+                <span v-if="project.isArduino"    class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(img/arduino-icon-dark.png)'               }"></span>
+                <span v-if="project.isQT"         class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(img/qt-icon-dark.png)'                    }"></span>
+                <span v-if="project.isBluetooth"  class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(img/bluetooth-icon-dark.png)'             }"></span>
+                <span v-if="project.isTensorFlow" class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(img/tensorflow-icon-dark.png)'            }"></span>
+                <span v-if="project.isPython"     class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(img/python-icon-dark.png)'                }"></span>
+                <span v-if="project.isJava"       class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(img/java-icon-dark.png)'                  }"></span>
+                <span v-if="project.isRuby"       class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(img/ruby-icon-dark.png)'                  }"></span>
+                <span v-if="project.isCuda"       class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(img/cuda-icon-dark.png)'                  }"></span>
+                <span v-if="project.isMPI"        class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(img/mpi-icon-dark.png)'                   }"></span>
+                <span v-if="project.isFlutter"    class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(img/flutter-icon-dark.png)'                   }"></span>
               </span>
             </div>
           </div>
@@ -94,11 +115,11 @@ export default Vue.extend({
   transition: box-shadow 0.15s;
 }
 .project-item::before {
-  z-index: 20;
-  width: 320px;
-  height: 80px;
+  z-index: 10;
+  width: 250px;
+  height: 100px;
   content: "";
-  background: url("/img/clickme.png") no-repeat;
+  background: url('/img/clickme.png') no-repeat;
   background-size:contain;
   position: absolute;
   top: 20%;
@@ -117,16 +138,18 @@ export default Vue.extend({
 .project-item-image {
   background-size: cover;
   background-position: center;
-  height: 100%;
-  width: 100%;
+  transform: translateX(var(--xShift)) translateY(var(--yShift));
+  height: var(--zoomHeight);
+  width:  var(--zoomWidth);
   transition: all 0.2s;
 }
+
 
 .project-item-image:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   filter: brightness(100%);
-  transform: scale(1.05);
+  transform: scale(1.05) translateX(var(--xShift)) translateY(var(--yShift));
 }
 
 .project-item:hover .project-item-image {
@@ -186,7 +209,7 @@ export default Vue.extend({
     var(--accent-color-hover) -1px -1px,
     rgba(0, 0, 0, 0.365) 1.5px 1.5px;
   z-index: 10;
-  font-size: 120%;
+  font-size: 90%;
   transition: text-shadow 0.3s;
   transition: font-size 0.65s;  
   position: absolute;
@@ -215,18 +238,31 @@ export default Vue.extend({
   transition: right 0.2s, top 0.2s, width 0.3s, height 0.3s;
 }
 
+.smallIcons .techIcon {
+  width:42px;
+  height:42px;
+  top:-21.8px;
+}
+
 .project-item:hover .techIcon {
-  right:0px;
+  right:10px;
   top:0px;  
   width:48px;
-  height:48px;
+  height:45px;
   background-image: var(--icon-url);
-  filter: invert(0.85);
+  filter: invert(0.9);
+  opacity: 0.65;
+}
+
+.project-item:hover .smallIcons .techIcon {
+  width:36px;
+  height:36px;
+  top:6px;  
 }
 
 .tags {
   position:absolute;
-  top: 150px;
+  top: 130px;
   left: 195px;
   height: fit-content;
   width: 100px;
@@ -278,7 +314,7 @@ export default Vue.extend({
     rgba(0, 0, 0, 0.55) 0 1.5px,
     rgba(0, 0, 0, 0) 1.5px 0,  
     rgba(0, 0, 0, 0.55) 1.5px 1.5px;
-  font-size: 128%;
+  font-size: 125%;
 }
 
 @media only screen and (min-width: 620px) {
@@ -297,7 +333,8 @@ export default Vue.extend({
   }
 
   .wide {
-    grid-column-end: span 2;
+    grid-column-end: span 2;    
+    font-size: 120%;
   }
   .high {
     grid-row-end: span 2;
