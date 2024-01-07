@@ -16,18 +16,18 @@
             :style="{ '--accent-color-alpha': project.accentColorAlpha, '--accent-color-idle': project.accentColor }">
               <span v-if="project.isUnreal"     class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/unreal-tag.png)'        }"></span>
               <span v-if="project.isUnrealBp"   class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/unreal-and-bp-tag.gif)' }"></span>
-              <span v-if="project.isOpenGL"     class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/opengl-tag.png)'         }"></span>
-              <span v-if="project.isCpp"        class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/cpp-tag.png)'            }"></span>
-              <span v-if="project.isBlender"    class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/blender-tag.png)'        }"></span>
-              <span v-if="project.isGodot"      class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/godot-tag.png)'          }"></span>
-              <span v-if="project.isArduino"    class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/arduino-tag.png)'        }"></span>
-              <span v-if="project.isQT"         class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/qt-tag.png)'             }"></span>
-              <span v-if="project.isBluetooth"  class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/bluetooth-tag.png)'      }"></span>
-              <span v-if="project.isTensorFlow" class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/tensorflow-tag.png)'     }"></span>
-              <span v-if="project.isPython"     class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/python-tag.png)'         }"></span>
-              <span v-if="project.isJava"       class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/java-tag.png)'           }"></span>
-              <span v-if="project.isRuby"       class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/ruby-tag.png)'           }"></span>
-              <span v-if="project.isFlutter"    class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/flutter-tag.png)'        }"></span>
+              <span v-if="project.isOpenGL"     class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/opengl-tag.png)'        }"></span>
+              <span v-if="project.isCpp"        class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/cpp-tag.png)'           }"></span>
+              <span v-if="project.isBlender"    class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/blender-tag.png)'       }"></span>
+              <span v-if="project.isGodot"      class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/godot-tag.png)'         }"></span>
+              <span v-if="project.isArduino"    class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/techTag.png)'           }"></span>
+              <span v-if="project.isQT"         class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/techTag.png)'           }"></span>
+              <span v-if="project.isBluetooth"  class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/techTag.png)'           }"></span>
+              <span v-if="project.isTensorFlow" class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/techTag.png)'           }"></span>
+              <span v-if="project.isPython"     class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/techTag.png)'           }"></span>
+              <span v-if="project.isJava"       class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/techTag.png)'           }"></span>
+              <span v-if="project.isRuby"       class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/techTag.png)'           }"></span>
+              <span v-if="project.isFlutter"    class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/techTag.png)'           }"></span>
             </div>
             
             <div class="title-bar2" :style="{ '--background-color': `${project.accentColor}`, '--box-shadow': `-25px 0 0 0 ${project.accentColorHover}` }"></div>
