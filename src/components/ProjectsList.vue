@@ -119,7 +119,7 @@ export default Vue.extend({
   width: 250px;
   height: 100px;
   content: "";
-  background: url("https://antoniopriego.github.io/portfolio/img/clickme.png") no-repeat;
+  background: url(https://antoniopriego.github.io/portfolio/img/clickme.png) no-repeat;
   background-size:contain;
   position: absolute;
   top: 20%;
