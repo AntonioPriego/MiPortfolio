@@ -14,8 +14,8 @@
             class="tags"
             :class="{ 'extensive': project.isWide, 'tall': project.isHigh }"
             :style="{ '--accent-color-alpha': project.accentColorAlpha, '--accent-color-idle': project.accentColor }">
-              <span v-if="project.isUnreal"     class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/unreal-tag.png))'        }"></span>
-              <span v-if="project.isUnrealBp"   class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/unreal-and-bp)-tag.gif)' }"></span>
+              <span v-if="project.isUnreal"     class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/unreal-tag.png)'        }"></span>
+              <span v-if="project.isUnrealBp"   class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/unreal-and-bp-tag.gif)' }"></span>
               <span v-if="project.isOpenGL"     class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/opengl-tag.png)'         }"></span>
               <span v-if="project.isCpp"        class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/cpp-tag.png)'            }"></span>
               <span v-if="project.isBlender"    class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/blender-tag.png)'        }"></span>

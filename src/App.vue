@@ -28,9 +28,15 @@ export default Vue.extend({
 
 // Preload heavy images or gifs that are used in other pages
 Helpers.preloadImages([
-  "img/projects/project-1-icon.png",
-  "img/projects/project-2-icon.png",
-  "img/projects/project-3-icon.png"
+  "img/projects/ActionRoguelike.png",
+  "img/projects/UE_LevelSet.gif",
+  "https://raw.githubusercontent.com/AntonioPriego/UGR_InformaticaGrafica/main/Capturas/2_2.png",
+  "img/projects/FallGuysWannaBe.gif",
+  "img/projects/DungeonPuzzle.gif",
+  "https://raw.githubusercontent.com/AntonioPriego/SmartPen/main/Memory/capturas/SmartPenMP.png",
+  "img/projects/civitas.png",
+  "img/projects/sobel.jpg",
+  "img/projects/TiradApp/Preview.png"
 ]);
 
 </script>
