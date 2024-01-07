@@ -14,20 +14,20 @@
             class="tags"
             :class="{ 'extensive': project.isWide, 'tall': project.isHigh }"
             :style="{ '--accent-color-alpha': project.accentColorAlpha, '--accent-color-idle': project.accentColor }">
-              <span v-if="project.isUnreal"     class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(/img/unreal-tag.png)'        }"></span>
-              <span v-if="project.isUnrealBp"   class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(/img/unreal-and-bp-tag.gif)' }"></span>
-              <span v-if="project.isOpenGL"     class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(/img/opengl-tag.png)'        }"></span>
-              <span v-if="project.isCpp"        class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(/img/cpp-tag.png)'           }"></span>
-              <span v-if="project.isBlender"    class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(/img/blender-tag.png)'       }"></span>
-              <span v-if="project.isGodot"      class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(/img/godot-tag.png)'         }"></span>
-              <span v-if="project.isArduino"    class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(/img/arduino-tag.png)'       }"></span>
-              <span v-if="project.isQT"         class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(/img/qt-tag.png)'            }"></span>
-              <span v-if="project.isBluetooth"  class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(/img/bluetooth-tag.png)'     }"></span>
-              <span v-if="project.isTensorFlow" class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(/img/tensorflow-tag.png)'    }"></span>
-              <span v-if="project.isPython"     class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(/img/python-tag.png)'        }"></span>
-              <span v-if="project.isJava"       class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(/img/java-tag.png)'          }"></span>
-              <span v-if="project.isRuby"       class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(/img/ruby-tag.png)'          }"></span>
-              <span v-if="project.isFlutter"    class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(/img/flutter-tag.png)'          }"></span>
+              <span v-if="project.isUnreal"     class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(../img/unreal-tag.png)'        }"></span>
+              <span v-if="project.isUnrealBp"   class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(../img/unreal-and-bp-tag.gif)' }"></span>
+              <span v-if="project.isOpenGL"     class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(../img/opengl-tag.png)'        }"></span>
+              <span v-if="project.isCpp"        class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(../img/cpp-tag.png)'           }"></span>
+              <span v-if="project.isBlender"    class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(../img/blender-tag.png)'       }"></span>
+              <span v-if="project.isGodot"      class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(../img/godot-tag.png)'         }"></span>
+              <span v-if="project.isArduino"    class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(../img/arduino-tag.png)'       }"></span>
+              <span v-if="project.isQT"         class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(../img/qt-tag.png)'            }"></span>
+              <span v-if="project.isBluetooth"  class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(../img/bluetooth-tag.png)'     }"></span>
+              <span v-if="project.isTensorFlow" class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(../img/tensorflow-tag.png)'    }"></span>
+              <span v-if="project.isPython"     class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(../img/python-tag.png)'        }"></span>
+              <span v-if="project.isJava"       class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(../img/java-tag.png)'          }"></span>
+              <span v-if="project.isRuby"       class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(../img/ruby-tag.png)'          }"></span>
+              <span v-if="project.isFlutter"    class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(../img/flutter-tag.png)'          }"></span>
             </div>
             
             <div class="title-bar2" :style="{ '--background-color': `${project.accentColor}`, '--box-shadow': `-25px 0 0 0 ${project.accentColorHover}` }"></div>
@@ -36,21 +36,21 @@
                 {{ project.name }}
               </span>
               <span class="techs" :class="{ 'smallIcons': project.smallIcons }" >
-                <span v-if="project.isUnreal || project.isUnrealBp"  class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(/img/ue-icon-dark.png)' }"></span>
-                <span v-if="project.isOpenGL"     class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(/img/opengl-icon-dark.png)'                }"></span>
-                <span v-if="project.isCpp"        class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(/img/cpp-icon-dark.png)'                   }"></span>
-                <span v-if="project.isBlender"    class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(/img/blender-icon-dark.png)'               }"></span>
-                <span v-if="project.isGodot"      class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(/img/godot-icon-dark.png)'                 }"></span>
-                <span v-if="project.isArduino"    class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(/img/arduino-icon-dark.png)'               }"></span>
-                <span v-if="project.isQT"         class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(/img/qt-icon-dark.png)'                    }"></span>
-                <span v-if="project.isBluetooth"  class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(/img/bluetooth-icon-dark.png)'             }"></span>
-                <span v-if="project.isTensorFlow" class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(/img/tensorflow-icon-dark.png)'            }"></span>
-                <span v-if="project.isPython"     class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(/img/python-icon-dark.png)'                }"></span>
-                <span v-if="project.isJava"       class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(/img/java-icon-dark.png)'                  }"></span>
-                <span v-if="project.isRuby"       class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(/img/ruby-icon-dark.png)'                  }"></span>
-                <span v-if="project.isCuda"       class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(/img/cuda-icon-dark.png)'                  }"></span>
-                <span v-if="project.isMPI"        class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(/img/mpi-icon-dark.png)'                   }"></span>
-                <span v-if="project.isFlutter"    class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(/img/flutter-icon-dark.png)'                   }"></span>
+                <span v-if="project.isUnreal || project.isUnrealBp"  class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(../img/ue-icon-dark.png)' }"></span>
+                <span v-if="project.isOpenGL"     class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(../img/opengl-icon-dark.png)'                }"></span>
+                <span v-if="project.isCpp"        class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(../img/cpp-icon-dark.png)'                   }"></span>
+                <span v-if="project.isBlender"    class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(../img/blender-icon-dark.png)'               }"></span>
+                <span v-if="project.isGodot"      class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(../img/godot-icon-dark.png)'                 }"></span>
+                <span v-if="project.isArduino"    class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(../img/arduino-icon-dark.png)'               }"></span>
+                <span v-if="project.isQT"         class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(../img/qt-icon-dark.png)'                    }"></span>
+                <span v-if="project.isBluetooth"  class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(../img/bluetooth-icon-dark.png)'             }"></span>
+                <span v-if="project.isTensorFlow" class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(../img/tensorflow-icon-dark.png)'            }"></span>
+                <span v-if="project.isPython"     class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(../img/python-icon-dark.png)'                }"></span>
+                <span v-if="project.isJava"       class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(../img/java-icon-dark.png)'                  }"></span>
+                <span v-if="project.isRuby"       class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(../img/ruby-icon-dark.png)'                  }"></span>
+                <span v-if="project.isCuda"       class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(../img/cuda-icon-dark.png)'                  }"></span>
+                <span v-if="project.isMPI"        class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(../img/mpi-icon-dark.png)'                   }"></span>
+                <span v-if="project.isFlutter"    class="techIcon" :style="{ '--background-color-idle': project.accentColor, '--background-color-focus': project.accentColorHover, '--icon-url': 'url(../img/flutter-icon-dark.png)'                   }"></span>
               </span>
             </div>
           </div>
