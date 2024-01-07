@@ -43,7 +43,6 @@ Helpers.preloadImages([
 
 <style lang="less">
 
-@import './css/projects.less';
 @import './css/variables.less';
 
 html {	
@@ -167,6 +166,66 @@ h1 {
 .fade-enter,
 .fade-leave-active {
   opacity: 0
+}
+
+.dialog-content {
+
+// Add custom styles for your projects descriptions here
+
+.paragraph {
+    margin: 20px 0px;
+}
+
+.center {
+    text-align: center;
+}
+
+iframe.youtube {
+    width: 100%;
+    min-height: 300px;
+}
+
+.phone-screenshot {
+    width: 100%;
+}
+
+.pc-screenshot {
+    width: 100%;
+}
+
+.notice {
+    border:1px solid rgb(0, 85, 0);
+    background-color: rgb(144, 196, 144);
+    color: rgb(1, 99, 1);
+    padding: 10px;
+}
+
+a {
+    color:#696969;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+@media only screen and (min-width: 620px){
+    iframe.youtube {
+        max-width: 728px;
+        height: 409px;
+    }
+
+    .phone-screenshot {
+        margin: 15px;
+        width : 300px;
+    }
+
+    .pc-screenshot {
+        margin: 15px;
+        width : 400px;
+    }
+}
 }
 
 </style>
