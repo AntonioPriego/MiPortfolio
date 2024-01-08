@@ -22,12 +22,17 @@ export default Vue.extend({
     title: String,
     htmlContent: String,
   },
+  data() {
+    return {
+      localVisible: this.visible,
+    };
+  },
   methods: {
     openDialog() {
-      this.visible = true;
+      this.localVisible = true;
     },
     closeDialog() {
-      this.visible = false;
+      this.localVisible = false;
     },
     handleClickOutside(event: MouseEvent) {
       const dialog = this.$refs.dialog as HTMLElement;

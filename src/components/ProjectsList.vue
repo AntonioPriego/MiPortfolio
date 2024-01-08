@@ -60,10 +60,10 @@
       <ProjectDetailsOverlay
         v-on:close="showPopup = false"
         :visible="showPopup"
+        :localVisible="showPopup"
         :title="popupTitle"
         :htmlContent="popupContent"
         :color="popupColor"
-        @close="showPopup = false"
       />
     </div>
 </template>
