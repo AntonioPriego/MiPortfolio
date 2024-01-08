@@ -125,13 +125,13 @@ export default Vue.extend({
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0;
+  opacity: 0%;
   transition: opacity 0.3s ease-in-out;
 }
 
 .project-item:hover::before,
 .project-item-image:hover + .project-item::before {
-  opacity: 0.8;
+  opacity: 80%;
   transition: opacity 0.8s ease-in-out;
 }
 
@@ -251,7 +251,7 @@ export default Vue.extend({
   height:45px;
   background-image: var(--icon-url);
   filter: invert(0.9);
-  opacity: 0.65;
+  opacity: 65%;
 }
 
 .project-item:hover .smallIcons .techIcon {
@@ -281,7 +281,7 @@ export default Vue.extend({
   width: 80px;
   background-image: var(--tag-url);
   background-size: cover;
-  opacity: 0;
+  opacity: 0%;
   visibility: collapse;
   transition: opacity 0.45s, visibility 0.8s;
 }
@@ -293,7 +293,7 @@ export default Vue.extend({
 }
 
 .project-item:hover .techTag {
-  opacity: 1;
+  opacity: 99%;
   visibility: visible;
 }
 

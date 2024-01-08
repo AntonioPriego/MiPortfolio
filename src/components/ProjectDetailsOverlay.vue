@@ -91,7 +91,7 @@ h1.dialog-title {
   border-radius: 50%;
 }
 .dialog-close:hover {
-  opacity: 0.6;
+  opacity: 60%;
   box-shadow: inset 2px 2px 5px #393e4632;
   border-radius: 50%;
 }

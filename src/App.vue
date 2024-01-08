@@ -120,13 +120,13 @@ h1 {
 }
 
 .blurredAvatar {
-  opacity: 0.8;
+  opacity: 80%;
   filter: alpha(opacity=40);
   filter: blur(8.5px);
 }
     
 .blurredAvatar:hover {
-  opacity: 1.0;
+  opacity: 100%;
   filter: alpha(opacity=100);
   filter: blur(0px);
 }
@@ -163,67 +163,64 @@ h1 {
 
 .fade-enter,
 .fade-leave-active {
-  opacity: 0
+  opacity: 0%;
 }
 
 .dialog-content {
+  .paragraph {
+      margin: 20px 0px;
+  }
 
-// Add custom styles for your projects descriptions here
+  .center {
+      text-align: center;
+  }
 
-.paragraph {
-    margin: 20px 0px;
-}
+  iframe.youtube {
+      width: 100%;
+      min-height: 300px;
+  }
 
-.center {
-    text-align: center;
-}
+  .phone-screenshot {
+      width: 100%;
+  }
 
-iframe.youtube {
-    width: 100%;
-    min-height: 300px;
-}
+  .pc-screenshot {
+      width: 100%;
+  }
 
-.phone-screenshot {
-    width: 100%;
-}
+  .notice {
+      border:1px solid rgb(0, 85, 0);
+      background-color: rgb(144, 196, 144);
+      color: rgb(1, 99, 1);
+      padding: 10px;
+  }
 
-.pc-screenshot {
-    width: 100%;
-}
+  a {
+      color:#696969;
+      opacity: 100%;
+      text-decoration: underline;
+  }
 
-.notice {
-    border:1px solid rgb(0, 85, 0);
-    background-color: rgb(144, 196, 144);
-    color: rgb(1, 99, 1);
-    padding: 10px;
-}
+  a:hover {
+      opacity: 60%;
+  }
 
-a {
-    color:#696969;
-    opacity: 1;
-    text-decoration: underline;
-}
+  @media only screen and (min-width: 620px){
+      iframe.youtube {
+          max-width: 728px;
+          height: 409px;
+      }
 
-a:hover {
-    opacity: 0.6;
-}
+      .phone-screenshot {
+          margin: 15px;
+          width : 300px;
+      }
 
-@media only screen and (min-width: 620px){
-    iframe.youtube {
-        max-width: 728px;
-        height: 409px;
-    }
-
-    .phone-screenshot {
-        margin: 15px;
-        width : 300px;
-    }
-
-    .pc-screenshot {
-        margin: 15px;
-        width : 400px;
-    }
-}
+      .pc-screenshot {
+          margin: 15px;
+          width : 400px;
+      }
+  }
 }
 
 </style>

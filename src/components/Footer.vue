@@ -20,7 +20,7 @@ export default Vue.extend({
 .footer {
   //background-color: @contentBgColor;  
   width: 100%;
-  opacity: 0.7;
+  opacity: 70%;
   padding-bottom: 30px;
 }
 .left, .right {
