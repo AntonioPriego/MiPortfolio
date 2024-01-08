@@ -3,9 +3,7 @@
     
     <Header />
     <div class="main">
-      <transition name="fade" mode="out-in">
-        <router-view/>
-      </transition>
+      <router-view/>
     </div>
     <Footer />
   </div>
@@ -154,72 +152,87 @@ h1 {
   }
 }
 
-.fade-enter-active,
-.fade-leave-active {
-  transition-duration: 0.2s;
-  transition-property: opacity;
-  transition-timing-function: ease;
-}
-
-.fade-enter,
-.fade-leave-active {
-  opacity: 0%;
-}
-
 .dialog-content {
   .paragraph {
-      margin: 20px 0px;
+    margin: 20px 0px;
   }
 
   .center {
-      text-align: center;
+    text-align: center;
   }
 
   iframe.youtube {
-      width: 100%;
-      min-height: 300px;
+    width: 100%;
   }
 
   .phone-screenshot {
-      width: 100%;
+    width: 100%;
   }
 
   .pc-screenshot {
-      width: 100%;
+    width: 100%;
+  }
+
+  .custom-screenshot {
+    width: 250px;
+  }
+
+  .custom-screenshot2 {
+    width: 280px;
   }
 
   .notice {
-      border:1px solid rgb(0, 85, 0);
-      background-color: rgb(144, 196, 144);
-      color: rgb(1, 99, 1);
-      padding: 10px;
+    text-align: center;
+    border:1px solid rgb(0, 85, 0);
+    background-color: rgb(144, 196, 144);
+    color: rgb(44, 44, 44);
+    padding: 10px;
+  }
+
+  .notice a {
+    color:#175e69;
   }
 
   a {
-      color:#696969;
-      opacity: 100%;
-      text-decoration: underline;
+    color:#b0d5ff;
+    opacity: 100%;
+    text-decoration: underline;
   }
 
   a:hover {
-      opacity: 60%;
+    opacity: 60%;
   }
 
-  @media only screen and (min-width: 620px){
-      iframe.youtube {
-          max-width: 728px;
-          height: 409px;
-      }
+  @media only screen and (max-width: 620px) {
+    font-size: 80%;
+  }
 
-      .phone-screenshot {
-          margin: 15px;
-          width : 300px;
-      }
+  @media only screen and (min-width: 620px) {
+    iframe.youtube {
+      max-width: 728px;
+      height: 409px;
+      min-height: 300px;
+      position: relative;
+      right: -22.5%;
+    }
 
-      .pc-screenshot {
-          margin: 15px;
-          width : 400px;
-      }
+    .phone-screenshot {
+      margin: 15px;
+      width : 300px;
+    }
+
+    .pc-screenshot {
+      margin: 15px;
+      width : 400px;
+    }
+    
+    .custom-screenshot {
+      width: 550px;
+    }
+
+    .custom-screenshot2 {
+      width: 650px;
+    }
   }
 }
 

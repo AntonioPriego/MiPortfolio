@@ -6,10 +6,10 @@
             :key="project.id"
               @click="showDetails(project)"
               class="project-item"
-              :class="{ 'wide': project.isWide, 'high': project.isHigh }">
+              :class="{ 'wide': project.isWide, 'high': project.isHigh, 'isDetailed': project.isDetailed }">
             <div class="project-item-image" :style="{ '--zoomHeight': project.zoomHeight, '--zoomWidth': project.zoomWidth, '--xShift': project.xShift, '--yShift': project.yShift, 'background-image': 'url(' + project.iconUrl + ')', '--accent-color-idle': project.accentColorHover }"></div>
             
-
+<!-- TAGS
             <div v-if="project.isUnreal || project.isUnrealBp || project.isCpp || project.isBlender || project.isGodot || project.isOpenGL || project.isArduino || project.isQT || project.isBluetooth || project.isTensorFlow || project.isPython || project.isJava || project.isRuby || project.isCuda || project.isMPI || project.isFlutter"
             class="tags"
             :class="{ 'extensive': project.isWide, 'tall': project.isHigh }"
@@ -29,7 +29,7 @@
               <span v-if="project.isRuby"       class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/techTag.png)'           }"></span>
               <span v-if="project.isFlutter"    class="techTag" :style="{ '--background-color-idle': project.accentColor, '--tag-url': 'url(https://antoniopriego.github.io/portfolio/img/techTag.png)'           }"></span>
             </div>
-            
+-->
             <div class="title-bar2" :style="{ '--background-color': `${project.accentColor}`, '--box-shadow': `-25px 0 0 0 ${project.accentColorHover}` }"></div>
             <div class="title-bar" :style="{  'background-color': project.accentColor, '--accent-color-hover': project.accentColorHover } " >
               <span class="title-text">
@@ -63,6 +63,7 @@
         :title="popupTitle"
         :htmlContent="popupContent"
         :color="popupColor"
+        @close="showPopup = false"
       />
     </div>
 </template>
@@ -90,11 +91,13 @@ export default Vue.extend({
   },
   methods: {
     showDetails: function (item: ProjectData) {
-      this.popupTitle = item.name;
-      this.popupColor = item.accentColor;
-      this.popupContent = item.htmlDescription;
-      this.showPopup = true;
-      window.scrollTo(0,0);
+      if (item.isDetailed) {
+        this.popupTitle = item.name;
+        this.popupColor = item.accentColor;
+        this.popupContent = item.htmlDescription;
+        this.showPopup = true;
+        window.scrollTo(0, 0);
+      }
     },
   },
 });
@@ -114,7 +117,7 @@ export default Vue.extend({
   box-shadow: 1px 1px 1px 1px #222222;
   transition: box-shadow 0.15s;
 }
-.project-item::before {
+.project-item.isDetailed::before {
   z-index: 10;
   width: 250px;
   height: 100px;
@@ -152,7 +155,7 @@ export default Vue.extend({
   transform: scale(1.05) translateX(var(--xShift)) translateY(var(--yShift));
 }
 
-.project-item:hover .project-item-image {
+.project-item.isDetailed:hover .project-item-image {
   filter: blur(1px) brightness(60%);
 }
 

@@ -1,20 +1,14 @@
 <template>
-  <transition name="fade">
     <div v-if="visible">
-      <div class="overlay">
-      </div>
-      <div class="dialog" :style="{ 'background-color': color }">
+      <div class="overlay" @click="handleClickOutside"></div>
+      <div class="dialog" :style="{ 'background-color': color }" ref="dialog">
         <div @click="$emit('close')" class="dialog-close"><i class="fa fa-lg fa-fw fa-angle-down"></i></div>
         <h1 class="dialog-title">{{ title }}</h1>
         <div class="dialog-content">
           <div v-html="htmlContent"></div>
-          <div class="dialog-bottom">
-          <a @click="$emit('close')" class="dialog-close-button">Close</a>
-        </div>
         </div>
       </div>
     </div>
-  </transition>
 </template>
 
 <script lang="ts">
@@ -29,6 +23,20 @@ export default Vue.extend({
     htmlContent: String,
   },
   methods: {
+    openDialog() {
+      this.visible = true;
+    },
+    closeDialog() {
+      this.visible = false;
+    },
+    handleClickOutside(event: MouseEvent) {
+      const dialog = this.$refs.dialog as HTMLElement;
+
+      if (dialog && !dialog.contains(event.target as Node)) {
+        this.closeDialog();
+        this.$emit('close');
+      }
+    },
     getImage: function(url: string) {
       console.log("fetching image " + url);
     }
@@ -37,8 +45,8 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-.overlay {
-  background-color: rgba(0,0,0,0.5);
+.overlay {  
+  background: linear-gradient(-2deg, #b314b027 25%, rgb(34, 40, 49) 85%);
   z-index: 11;
   position:fixed;
   top:0px;
@@ -49,76 +57,57 @@ export default Vue.extend({
 
 .dialog {
   position:absolute;
-  top: 0px;
+  top: 80px;
   left: 0px;
   right: 0px;
   z-index: 11;
   margin: 20px;
   padding-bottom: 10px;
-  color:white;
-  border-radius: 0.7%;
-  box-shadow: #222831 0 0 20px;
+  border-radius: 0.4%;
+  box-shadow: #313122 10px 10px 50px;
   border-collapse: collapse;
 }
 
-iframe {
+iframe {  
   width: 100%;
 }
 
 h1.dialog-title {
     text-align: center;
-    font-size: 1.3em;
     margin: 0px;
     padding: 22px;
 }
 
 .dialog-content {
-  padding: 20px;
+  background-color: #2f2239;
+  color: #d9dbe2;
 }
 
-.dialog-content {
-  background-color: #222831;
-  color: #c5c9d5;
-}
 .dialog-close {
   position: absolute;
-  top: 17px;
+  top: 15px;
   right: 15px;
   cursor:pointer;
   font-size: 1.2em;
-  font-weight: 100;
-  box-shadow: 4px 4px 8px #393e4632;
-  border-radius: 50%;
+  scale: 120%;
 }
+
 .dialog-close:hover {
-  opacity: 60%;
-  box-shadow: inset 2px 2px 5px #393e4632;
-  border-radius: 50%;
+  color: rgb(255, 253, 246);
+  scale: 140%;
 }
 
-.dialog-bottom {
-  text-align: center;
-}
-
-a.dialog-close-button {
-  cursor:pointer;
-  font-size: 1.25em;
-  display: inline-block;
-  margin: 0 auto;
-  color: #99abc7;
-}
 
 @media only screen and (min-width: 620px){
   .dialog {
     margin: 0 auto;
-    margin-top: 80px;
     margin-bottom: 40px;
     max-width: 1400px;
   }
 
   h1.dialog-title {
     font-size: 1.6em;    
-    box-shadow: inset 0 0 20px #222831;
+    box-shadow: inset 0 0 5px #222831;
     border-collapse: collapse;
   }
 

@@ -3,6 +3,7 @@ export default class ProjectData {
     name:             string;
     htmlDescription:  string;
     iconUrl:          string; 
+    isDetailed:       boolean;
     smallIcons:       boolean;
     zoomHeight:       string;
     zoomWidth:        string;
@@ -37,6 +38,7 @@ export default class ProjectData {
         name:         string,
         iconUrl:      string,
         html:         string,
+        isDetailed    = true,
         smallIcons    = false,
         zoomHeight    = "100%",
         zoomWidth     = "100%",
@@ -71,6 +73,7 @@ export default class ProjectData {
         this.accentColor      = accentColor.replace('rgb', 'rgba').replace(')', ', 0.5)');
         this.accentColorHover = accentColor.replace('rgb', 'rgba').replace(')', ', 0.80)'); 
         this.accentColorAlpha = accentColor.replace('rgb', 'rgba').replace(')', ', 0.35)');
+        this.isDetailed       = isDetailed;
         this.smallIcons       = smallIcons;
         this.zoomHeight       = zoomHeight;
         this.zoomWidth        = zoomWidth;
