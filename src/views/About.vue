@@ -3,7 +3,7 @@
     
     <div class="row">
       <div class="column1">
-        <h1>Hello!</h1><h2>It's</h2><br>
+        <h1>Hello! </h1> <h2>It's</h2><br>
         <h1 class="animate-charcter">Antonio Priego</h1>
 
         <div class="paragraph">
@@ -66,7 +66,7 @@
 
     <div class="thingsILove">
       <h2>Techie I Love</h2>
-      <div class="loveList"  style="scale: 80%;">
+      <div class="loveList">
         <div class="loveItem">
           <img src="img/ue-icon-dark.png"/>
           <p style="font-size: 90%;">Unreal Engine</p>
@@ -146,12 +146,16 @@
 
 .loveItem img {
   filter:invert(1);
-  width: 70%;
+  max-width: 60px;
+  max-height: 60px;
+  min-width: 60px;
+  min-height: 60px;
 }
 
 .loveItem p {
-  line-height: 70%;
-  margin-top: 10px;
+  line-height: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 #show_button{
@@ -284,6 +288,21 @@ h2 {
     float: center;
     font-size: 12.5px;  
     letter-spacing: -1.5px;
+  }
+
+  .loveList {
+    margin-left: 0px;
+  }
+
+  .loveItem img {
+    max-width: 43px;
+    max-height: 43px;
+    min-width: 40px;
+    min-height: 40px;
+  }
+
+  .loveItem p {
+    font-size: 50% !important;
   }
 }
 

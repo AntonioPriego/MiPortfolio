@@ -36,7 +36,7 @@
     <div class="full-content">
       <h2>Work experience</h2>
 
-  <div style="padding-left: 20px;">
+    <div style="padding-left: 20px;">
       <h3 class="jobTitle">Salesforce developer - Junior</h3>
       <h4>November 2022 - November 2023</h4>
 
@@ -51,30 +51,29 @@
       <div class="jobThoughts">Since then, I support other projects while waiting to be assigned to one of my own."</div>
 
       <div class="tech-stack">Apex, Lightning web components, Javascript, Git, Jira, Bitbucket, Aura, SF Developer Console, Unit tests, Teams, etc.</div>
-  </div>
+    </div>
 
       <h2>Education</h2>
-
       <br />
-      <div style="height: 180px; width: 650px; background-color: rgba(0, 0, 0, 0.05);">
+      <div class="educBlock">
         <div style="display: flex; justify-content: flex-start; padding-top: 30px; padding-left: 20px;">
           <div>
             <h3 style="padding: 0px;">Baccalaureate</h3>
             <div style="text-align: center;"><small>2015-2017</small></div>
             <div style="margin-top: -10px;"><small><i class="fa fa-map-marker" aria-hidden="true"></i> IES Inca Garcilaso</small></div>
-            <div style="color: #ddcbe9; margin-bottom: -15px;">Technological modality</div>
+            <div class="educModality">Technological modality</div>
           </div>
         </div>
       </div>
 
       <br />
       
-      <div style="height: 180px; width: 650px; background-color: rgba(0, 0, 0, 0.05);">
+      <div class="educBlock">
         <div style="display: flex; justify-content: flex-start; padding-top: 30px; padding-left: 20px;">
           <div>
             <h3 style="padding: 0px;">Computer engineering</h3>
             <div style="text-align: center;"><small>2017-2022</small></div>
-            <div style="color: #ddcbe9; margin-bottom: -15px;">Expertise in hardware</div><div><small style="font-size: 60%; color: #ffed89;"><i class="fa fa-trophy" aria-hidden="true"></i> Honours in my final degree project</small></div>
+            <div class="educModality">Expertise in hardware</div><div><small style="font-size: 60%; color: #ffed89;"><i class="fa fa-trophy" aria-hidden="true"></i> Honours in my final degree project</small></div>
           </div>
           <div class="vl"></div>
           <div style="display: flex; align-items: center; justify-content: flex-end;">
@@ -85,22 +84,21 @@
           </div>
         </div>
       </div>
-
       
 
       <h2>Languages</h2>
 
   <div style="padding-left: 20px;">
       <h3>Spanish - <small>Native</small></h3>
-      <div>My native language. I love it.</div>
+      <div><small>My native language. I love it.</small></div>
 
-      <h3>English - <small>B2 <small><small>CEFR</small></small></small> - <small> C1 <small><small>NTT Data Classroom</small></small></small></h3>
-      <div>I supose I have a great level, don't you know? I understand people and people understand me, so...</div>
+      <h3>English - <small><small>B2 <small style="color: #fff5ba;"><small><small>CEFR</small></small></small></small> <span style="opacity: 30%;">|</span> <small> C1 <small style="color: #bae7ff;"><small><small>NTT Data Classroom</small></small></small></small></small></h3>
+      <div><small>I supose I have a great level, don't you know? I understand people and people understand me, so...</small></div>
   </div>
 
       <h2>Courses and certifications</h2>
       <br />
-      <div style="display: grid; grid-template-columns: repeat(3, 390px); gap: 10px;">
+      <div class="certBlock">
         
         <a class="certLink" href="pdf/TL_UE_course.pdf" target="_blank">
           <div style="height: 180px; width: 390px; background-color: rgba(0, 0, 0, 0.05);">
@@ -270,16 +268,34 @@ h4 {
   text-align: center;
 }
 
+.educBlock {
+  height: 180px;
+  width: 650px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.educModality {
+  color: #ddcbe9;
+  margin-bottom: -15px;
+}
+
+.certBlock {
+  display: grid;
+  grid-template-columns: repeat(3, 390px);
+  gap: 10px;
+}
+
 .certLink {
   color: #f2e8ff;
   transition: color 0.5s;
 }
+
 .certLink:hover {
   color: #b9d1ff;
 }
 
 
-@media only screen and (min-width: 620px){
+@media only screen and (min-width: 620px) {
   .paragraph {
     float: left;
   }
@@ -293,6 +309,36 @@ h4 {
   .skill-set {
     float: left;
     padding-right: 60px; 
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .educBlock {
+    width: max-content;
+    height: max-content;
+    padding-right: 20px;
+    padding-bottom: 23px;
+    font-size: 50%;
+  }
+
+  .educModality {
+    margin-top: -10px;
+  }
+
+  .educBlock h4 {
+    padding-top: 6px !important;
+  }
+
+  .educBlock img {
+    width: 40px;
+    height: 40px;
+
+    align: none;
+    margin-right: 10px;
+  }
+
+  .certBlock {
+    grid-template-columns: repeat(1, 390px);
   }
 }
 </style>

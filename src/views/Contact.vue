@@ -38,9 +38,18 @@ ul {
 }
 
 li {
-    line-height: 1.8em;
-    font-size: 1.2em;
-  }
+  line-height: 2.8em;
+  font-size: 0.9em;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Opcional: agrega puntos suspensivos si el texto es demasiado largo */
+  width: auto;
+}
+
+i {
+  margin-right: 20px;
+}
 
 @media only screen and (min-width: 620px){
   ul {
@@ -48,12 +57,8 @@ li {
   }
 
   li {
-    line-height: 2em;
+    line-height: 2.4em;
     font-size: 1.4em;
   }
-}
-
-i {
-  margin-right: 20px;
 }
 </style>

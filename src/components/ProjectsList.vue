@@ -293,7 +293,7 @@ export default Vue.extend({
 }
 
 .project-item:hover .techTag {
-  opacity: 99%;
+  opacity: 100%;
   visibility: visible;
 }
 
@@ -341,13 +341,8 @@ export default Vue.extend({
   }
 }
 
-@media only screen and (max-width: 620px) {
-  .title-text {
-    font-size: 80%;
-  }
-  
+@media only screen and (max-width: 620px) {  
   .project-item:hover .title-text {
-    font-size: 80%;
     padding: -80px;
   }
   
@@ -361,6 +356,43 @@ export default Vue.extend({
 
   .extensive {
     left: 230px;
+  }
+  
+  .project-item {
+    transition: none;
+  }
+
+  .project-item::before {
+    transition: none;
+  }
+
+  .project-item:hover::before,
+  .project-item-image:hover + .project-item::before { 
+    transition: none;
+  }
+
+  .project-item-image {
+    transition: none;
+  }
+
+  .title-bar {
+    transition: none;
+  }
+
+  .title-bar2:before {
+    transition: none;
+  }
+
+  .techIcon {
+    transition: none;
+  }
+
+  .tags {
+    transition: none;
+  }
+
+  .techTag {
+    transition: none;
   }
 }
 
