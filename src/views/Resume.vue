@@ -20,8 +20,8 @@
       <br />Please feel free to <strong><router-link to="/game-projects">contact me</router-link></strong> if you think I can be helpful in your videogame project.
 
       <div style="margin-top:30px; margin-bottom:20px; margin-left: -20px;">
-        <a class="download-link" href="pdf/cv_english.pdf" target="_blank"><i class="fa fa-download fa-lg fa-fw"></i> Download CV (🇬🇧)</a>
-        <a class="download-link" href="pdf/cv_spanish.pdf" target="_blank"><i class="fa fa-download fa-lg fa-fw"></i> Descargar CV (🇪🇸)</a>
+        <a class="download-link" href="https://raw.githubusercontent.com/AntonioPriego/portfolio/portfolio_v2/docs/pdf/cv_english.pdf" target="_blank"><i class="fa fa-download fa-lg fa-fw"></i> Download CV (🇬🇧)</a>
+        <a class="download-link" href="https://raw.githubusercontent.com/AntonioPriego/portfolio/portfolio_v2/docs/pdf/cv_spanish.pdf" target="_blank"><i class="fa fa-download fa-lg fa-fw"></i> Descargar CV (🇪🇸)</a>
         <div style="clear:both"></div>
       </div>
     </div>

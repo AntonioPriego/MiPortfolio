@@ -4,7 +4,7 @@
     <div class="row">
       <div class="column1">
         <h1>Hello! </h1> <h2>It's</h2><br>
-        <h1 class="animate-charcter">Antonio Priego</h1>
+        <h1 class="animate-charcter">Antonio Priego Raya</h1>
 
         <div class="paragraph">
           <div>
@@ -30,6 +30,7 @@
         <img class="blurredAvatar" src="img/avatarGradient2.png" alt="It's me" />
         <div class="whatami">Computer Engineer</div>    
         <div class="currentPos">Currently : <strong>Mid Salesforce Developer</strong></div>    
+        <div class="currentPos"> <img style="vertical-align: middle;" src="img/andalucia.png"> Córdoba, <small> Andalucía | Spain </small> </div>    
       </div>
     </div>
   
