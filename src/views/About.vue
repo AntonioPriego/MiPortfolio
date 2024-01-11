@@ -4,7 +4,7 @@
     <div class="row">
       <div class="column1">
         <h1>Hello! </h1> <h2>It's</h2><br>
-        <h1 class="animate-charcter">Antonio Priego Raya</h1>
+        <h1 class="animate-charcter">Antonio Priego Raya <small><small><small><small>he/him</small></small></small></small></h1>
 
         <div class="paragraph">
           <div>
