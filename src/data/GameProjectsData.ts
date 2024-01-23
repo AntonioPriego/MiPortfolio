@@ -2,13 +2,12 @@ import ProjectData from '@/data/ProjectData.ts';
 
 
 export default [
-    new ProjectData("TomLoomanCourse", "Action Roguelike", "img/projects/ActionRoguelike.png", `
+    new ProjectData("TomLoomanCourse", "Action Roguelike", "img/projects/MultiRPG.gif", `
     <div class="paragraph">
         <strong>Action Roguelike</strong> is a multiplayer action rpg survivial waves. The result of developing further the project I did during <a style="text-decoration: none;" href="https://courses.tomlooman.com/p/unrealengine-cpp" target="_blank">Tom Looman's course</a>.
     </div>
 
-    <div style="text-align: center; margin-bottom: -40px; color: red;">[THIS VIDEO IS A PLACEHOLDER]</div> <br />
-    <iframe id="videoPlayer" class="youtube" src="https://www.youtube.com/embed/3uIrEifCvJQ" frameborder="0" allowfullscreen></iframe>
+    <iframe id="videoPlayer" class="youtube" src="https://www.youtube.com/embed/tkYM9w13rmY" frameborder="0" allowfullscreen></iframe>
     
     <div class="paragraph">
         <div class="notice">

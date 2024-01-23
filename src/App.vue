@@ -24,7 +24,7 @@ export default Vue.extend({
 
 // Preload heavy images or gifs that are used in other pages
 Helpers.preloadImages([
-  "img/projects/ActionRoguelike.png",
+  "img/projects/MultiRPG.gif",
   "img/projects/UE_LevelSet.gif",
   "https://raw.githubusercontent.com/AntonioPriego/UGR_InformaticaGrafica/main/Capturas/2_2.png",
   "img/projects/FallGuysWannaBe.gif",
