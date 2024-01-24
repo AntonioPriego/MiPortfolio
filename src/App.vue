@@ -29,6 +29,8 @@ Helpers.preloadImages([
   "https://raw.githubusercontent.com/AntonioPriego/UGR_InformaticaGrafica/main/Capturas/2_2.png",
   "img/projects/FallGuysWannaBe.gif",
   "img/projects/DungeonPuzzle.gif",
+  "img/projects/MechaBola.gif",
+  "img/projects/Furbolin.gif",
   "https://raw.githubusercontent.com/AntonioPriego/SmartPen/main/Memory/capturas/SmartPenMP.png",
   "img/projects/civitas.png",
   "img/projects/sobel.jpg",

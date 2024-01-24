@@ -149,10 +149,28 @@ export default [
     <img class="pc-screenshot" style="width: 60%;" src="https://raw.githubusercontent.com/AntonioPriego/UGR_InformaticaGrafica/main/Capturas/3.png"  />
     </div>
     `,/*isDetailed=*/true ,/*smallIcons*/false, /*zoomHeight=*/"100%", /*zoomWidth=*/"100%", /*xShift=*/"0px", /*yShift=*/"0px", /*high=*/false, /*wide=*/false, "rgb(144, 90, 114)", /*isUnreal=*/false, /*isUnrealBp=*/false, /*isOpenGL*/true, /*isCpp=*/true, /*isBlender=*/false, /*isGodot=*/false),
+    new ProjectData("Bola", "Abilities mechas prototype", "img/projects/MechaBola.gif", 
+    `
+    <div class="paragraph">A prototype of a mecha-based game with abilities to solve platforming puzzles that I lost when I switch from my last PC :(</a>
+    <div class="paragraph">I didn't actually lose the project, as I had version control, but I did have a very old version, prior to my last big progress with the ball's Animation Blueprint and update of the mecha hook. This made me very frustrated and I left the prototype.</a>
+    <div class="paragraph">This version I show is the old one, which doesn't look bad, but is much less fluid than the version I lost.</a>
+    </div>
+    <iframe id="videoPlayer" class="youtube" src="https://www.youtube.com/embed/saTOzgA2pGQ" frameborder="0" allowfullscreen></iframe>
+    
+    <div class="paragraph">The project I learn the most about Animation Blueprints, Blender and Blender to Unreal workflow.</a>
+    
+
+    </div>
+    `,/*isDetailed=*/true ,/*smallIcons*/false, /*zoomHeight=*/"100%", /*zoomWidth=*/"100%", /*xShift=*/"0px", /*yShift=*/"0px", /*high=*/false, /*wide=*/false, "rgb(144, 90, 114)", /*isUnreal=*/false, /*isUnrealBp=*/true, /*isOpenGL*/false, /*isCpp=*/false, /*isBlender=*/true, /*isGodot=*/false),
+    
     new ProjectData("FallGuys", "Fall Guys clone", "img/projects/FallGuysWannaBe.gif", 
     `
     
     `,/*isDetailed=*/false, /*smallIcons*/false, /*zoomHeight=*/"100%", /*zoomWidth=*/"100%", /*xShift=*/"0px", /*yShift=*/"0px", /*high=*/false, /*wide=*/false, "rgb(133, 202, 140)", /*isUnreal=*/true, /*isUnrealBp=*/false, /*isOpenGL*/false, /*isCpp=*/true, /*isBlender=*/false, /*isGodot=*/false),
+    new ProjectData("Furbolin", "Table football prototype", "img/projects/Furbolin.gif", 
+    `
+    
+    `,/*isDetailed=*/false, /*smallIcons*/false, /*zoomHeight=*/"100%", /*zoomWidth=*/"100%", /*xShift=*/"0px", /*yShift=*/"0px", /*high=*/false, /*wide=*/true, "rgb(133, 202, 140)", /*isUnreal=*/true, /*isUnrealBp=*/false, /*isOpenGL*/false, /*isCpp=*/true, /*isBlender=*/false, /*isGodot=*/false),
     new ProjectData("DungeonPuzzle", "Dungeon puzzle prototype", "img/projects/DungeonPuzzle.gif", 
     `
     

@@ -8,7 +8,7 @@
     <ul>
       <li>
         <i class="fa fa-user-circle-o fa-lg fa-fw"></i>
-        <a href="https://antoniopriego.github.io/portfolio/" target="_blank">https://antoniopriego.github.io/portfolio/</a>
+        <a href="https://antoniopriego.github.io/portfolio/" target="_blank">antoniopriego.github.io/portfolio</a>
       </li>
       <li>
         <i class="fa fa-envelope-o fa-lg fa-fw"></i>
@@ -16,15 +16,15 @@
       </li>
       <li>
         <i class="fa fa-linkedin fa-lg fa-fw" style="vertical-align: -5%;"></i>
-        <a href="www.linkedin.com/in/antonio-priego-raya-ba4a04206" target="_blank">www.linkedin.com/in/antonio-priego-raya-ba4a04206</a>
+        <a href="https://www.linkedin.com/in/antonio-priego-raya" target="_blank">linkedin.com/in/antonio-priego-raya</a>
       </li>
       <li>
         <i class="fa fa-github fa-lg fa-fw"></i>
-        <a href="https://github.com/AntonioPriego" target="_blank">https://github.com/AntonioPriego</a>
+        <a href="https://github.com/AntonioPriego" target="_blank">github.com/AntonioPriego</a>
       </li>
       <li>
         <i class="fa fa-gamepad fa-lg fa-fw"></i>
-        <a href="https://tonypr7.itch.io/" target="_blank">https://tonypr7.itch.io/</a> <small style="font-size: 60%;"> Empty at the moment :( </small>
+        <a href="https://tonypr7.itch.io/" target="_blank">tonypr7.itch.io</a> <small style="font-size: 60%;"> Empty at the moment :( </small>
       </li>
     </ul>
 
