@@ -128,6 +128,20 @@
             </div>
           </div>
         </a>
+        <a class="certLink" href="https://trailhead.salesforce.com/en/credentials/certification-detail-print/?searchString=SPJg3zVNoJTaxwbdS+9D4CxllkUlqvYSC0shD+eRZhtY7AyxKFgHE1ZLtgf8ZGUC" target="_blank">
+          <div style="height: 180px; width: 390px; background-color: rgba(0, 0, 0, 0.05);">
+            <div style="display: flex; justify-content: flex-start; padding-top: 30px; padding-left: 20px;">
+              <div style="flex: 1">
+                <h3 style="font-size: 100%; text-align: center; padding: 0px; padding-right: 20px;">Salesforce Certified AI Associate <small>(Official SF Certified)</small></h3>
+                <div style="text-align: center; padding-right: 20px"><small>June 2024</small></div>
+                <div style="display: flex; justify-content: space-between;">
+                  <span><small><i class="fa fa-university" aria-hidden="true"></i> Salesforce</small></span>
+                  <span style="padding-right: 20px;"><small><i class="fa fa-certificate" aria-hidden="true"></i> 4634842</small></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
         <a class="certLink" href="ude.my/UC-936ba90e-da67-4b14-a346-b0a16c112dbf" target="_blank">
           <div style="height: 180px; width: 390px; background-color: rgba(0, 0, 0, 0.05);">
             <div style="display: flex; justify-content:space-evenly; padding-top: 30px; padding-left: 20px;">
