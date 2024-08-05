@@ -94,6 +94,9 @@
 
       <h3>English - <small><small>B2 <small style="color: #fff5ba;"><small><small>CEFR</small></small></small></small> <span style="opacity: 30%;">|</span> <small> C1 <small style="color: #bae7ff;"><small><small>NTT Data Classroom</small></small></small></small></small></h3>
       <div><small>I supose I have a great level, don't you know? I understand people and people understand me, so...</small></div>
+
+      <h3>Portuguese - <small>Hobby</small></h3>
+      <div><small>I am learning it for fun.</small></div>
   </div>
 
       <h2>Courses and certifications</h2>
